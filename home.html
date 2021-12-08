@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style2.css" />
+    <link rel="stylesheet" href="styles/styleModal.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header id="header">
+        <div class="logo">
+          <img src="recursos/netflix.png" alt="" />
+          <div id="menu1">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Series</a></li>
+              <li><a href="#">Peliculas</a></li>
+              <li><a href="#">Novedades</a></li>
+              <li><a href="#">Mi lista</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="menu2">
+          <div id="icons">
+            <img id="search" src="recursos/5.png" alt="" />
+          </div>
+          <div id="icons"><h2>Niños</h2></div>
+          <div id="icons">
+            <img id="search" src="recursos/6.png" alt="" />
+          </div>
+          <div id="icons"><img id="foto" src="img/foto.JPG" alt="" /></div>
+        </div>
+      </header>
+
+      <section class="primera">
+        <aside id="aside">
+          <img src="recursos/7.png" alt="" />
+          <h3 class="titulo">Temporada 1: Capitulo 11</h3>
+
+          <p class="descripcion">
+            El chico timido y callado, logra enomorar a la bailarina de su
+            ciudad. ¿Que los deprara el desrtino?
+          </p>
+          <a href="video.html" role="button" class="boton">
+            <i class="fas fa-play"></i>Reproducir
+          </a>
+          <a id="myBtn" role="button" class="boton">
+            <i class="fas fa-info-circle"></i>Más información
+          </a>
+        </aside>
+      </section>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <section id="modal">
+            <span class="close">&times;</span>
+
+            <aside id="aside2">
+              <img src="recursos/7.png" alt="" />
+
+              <a href="video.html" role="button" class="boton">
+                <i class="fas fa-play"></i>Reproducir
+              </a>
+            </aside>
+          </section>
+          <div class="texto">
+            <h3>2021, Dos temporadas</h3>
+
+            <p>
+              El chico timido y callado, logra enomorar a la bailarina de su
+              ciudad. ¿Que les depara el desrtino?
+            </p>
+            <br />
+            <h3>Elenco</h3>
+          </div>
+          <div id="elenco">
+            <div id="cajaElenco">
+              <h1>Deni Andehui</h1>
+              <img src="img/E1.jpg" alt="" />
+            </div>
+            <div id="cajaElenco">
+              <h1>Yair Francisco</h1>
+              <img src="img/E2.jpg" alt="" />
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+
+      <div class="peliculas-recomendadas contenedor">
+        <div class="contenedor-titulo-controles">
+          <h3>Too 10 Mejores momentos</h3>
+          <div class="indicadores"></div>
+        </div>
+
+        <div class="contenedor-principal">
+          <button role="button" id="flecha-izquierda" class="flecha-izquierda">
+            <i class="fas fa-angle-left"></i>
+          </button>
+
+          <div class="contenedor-carousel">
+            <div class="carousel">
+              <div class="pelicula">
+                <a href="#"><img src="img/1.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="img/2.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="img/3.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="img/4.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="img/5.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="img/6.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="img/7.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="img/8.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="img/9.png" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="#"><img src="img/10.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+
+          <button role="button" id="flecha-derecha" class="flecha-derecha">
+            <i class="fas fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
